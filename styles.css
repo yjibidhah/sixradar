@@ -23,3 +23,12 @@ footer{background:#0a0c13;border-top:1px solid #2c2d37}.footer-inner{display:gri
 .sponsored-heading span:first-child{color:var(--cyan)}
 .sponsored-content{min-height:80px;padding:16px;background:#12151f;border:1px solid #303344;border-radius:8px;overflow-wrap:anywhere}
 @media(max-width:530px){.sponsored-section{padding:18px 0 48px}.sponsored-content{padding:8px;min-height:54px}.sponsored-heading{font-size:9px}}
+
+/* Separate banner position between launch information and post-launch content.
+   Hidden until its own Adsterra Banner unit is configured (never duplicate the Native unit).
+   No empty advertising space is shown to visitors. */
+.display-ad-section[hidden]{display:none!important}
+.display-ad-section{padding:12px 0 85px}
+.display-ad-content{display:flex;justify-content:center;align-items:flex-start;max-width:100%;min-height:0;overflow:hidden}
+.display-ad-content iframe{max-width:100%}
+@media(max-width:530px){.display-ad-section{padding:8px 0 56px}}

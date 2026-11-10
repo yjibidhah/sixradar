@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-# Set your custom domain and submit a sitemap in Google Search Console after deployment.
+
+Sitemap: https://sixradar.netlify.app/sitemap.xml

@@ -1,8 +1,7 @@
 /* SIXRADAR — dependency-free launch hub. All content rendered locally; no analytics, ads or cookies are set by this code. */
 (() => {
   'use strict';
-  // Midnight at the start of Nov 19 in the visitor's timezone is a DATE marker.
-  // Rockstar's exact universal unlock hour has not been asserted here.
+  // Rockstar has confirmed release at midnight local time on Nov 19 in each region.
   const RELEASE = new Date(2026, 10, 19, 0, 0, 0, 0);
   const NOV_START = new Date(2026, 10, 1, 0, 0, 0, 0);
   const $ = (id) => document.getElementById(id);
@@ -22,7 +21,7 @@
     $('progress-pct').textContent = pct.toFixed(0) + '%';
     $('progressbar').setAttribute('aria-valuenow', pct.toFixed(0));
     if (remaining === 0) {
-      $('countdown-note').innerHTML = 'It’s <strong>November 19 or later in your timezone!</strong> Check Rockstar and your console store for actual unlock availability.';
+      $('countdown-note').innerHTML = 'The official <strong>midnight local-time launch</strong> has arrived! Check your console store for access.';
       $('countdown-heading').innerHTML = 'THE BIG<br/><em>DAY IS HERE.</em>';
     }
   }

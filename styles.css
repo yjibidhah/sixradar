@@ -32,3 +32,9 @@ footer{background:#0a0c13;border-top:1px solid #2c2d37}.footer-inner{display:gri
 .display-ad-content{display:flex;justify-content:center;align-items:flex-start;max-width:100%;min-height:0;overflow:hidden}
 .display-ad-content iframe{max-width:100%}
 @media(max-width:530px){.display-ad-section{padding:8px 0 56px}}
+
+/* SIXRADAR homepage — verified newsroom highlights and 5-item navigation */
+.desktop-nav{gap:18px}.desktop-nav a{font-size:10px;white-space:nowrap}
+@media(max-width:1240px){.desktop-nav{gap:12px}.desktop-nav a{font-size:9px}.online{display:none}}
+.home-news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}.home-news-tile{min-height:180px;padding:23px 20px;border:1px solid #453346;background:radial-gradient(circle at 90% 10%,#632d5d90,transparent 60%),#151926;display:flex;flex-direction:column;justify-content:space-between;transition:.2s}.home-news-tile:hover{border-color:var(--pink);transform:translateY(-2px)}.home-news-tile>span{font-size:10px;color:var(--cyan);letter-spacing:.13em;font-weight:800}.home-news-tile>strong{font:800 31px/1 var(--display)}.home-news-tile>small{color:#bdc2ce;font-size:11px}.home-hub-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+@media(max-width:800px){.home-news-grid{grid-template-columns:1fr 1fr}}@media(max-width:530px){.home-news-grid{grid-template-columns:1fr}}

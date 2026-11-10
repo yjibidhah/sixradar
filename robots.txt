@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sixradar.netlify.app/sitemap.xml
+Sitemap: https://sixradar.pages.dev/sitemap.xml
